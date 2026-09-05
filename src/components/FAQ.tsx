@@ -15,12 +15,12 @@ const FAQ_DATA: FAQItem[] = [
     category: "sound",
     question: "What happens during a sound healing session, and what should I expect?",
     answer:
-      "During a sound bath, you will lie down or rest comfortably in a supported position using mats, bolsters, and blankets. Jules plays 432Hz frosted quartz crystal singing bowls, chime instruments, and ocean drums to create gentle acoustic resonant frequencies. The vibrations slow brainwave frequencies down to alpha and theta states, allowing the nervous system to shift from sympathetic (fight-or-flight) into deep parasympathetic restoration.",
+      "During a sound bath, you will lie down or rest comfortably in a supported position using mats, bolsters, and blankets. Juls plays 432Hz frosted quartz crystal singing bowls, chime instruments, and ocean drums to create gentle acoustic resonant frequencies. The vibrations slow brainwave frequencies down to alpha and theta states, allowing the nervous system to shift from sympathetic (fight-or-flight) into deep parasympathetic restoration.",
   },
   {
     id: "faq-queer-affirming-meaning",
     category: "queer-affirming",
-    question: "What does it mean for Jules in Bloom spaces to be 'queer-affirming and trauma-informed'?",
+    question: "What does it mean for Juls in Bloom spaces to be 'queer-affirming and trauma-informed'?",
     answer:
       "Being queer-affirming and trauma-informed is woven into every breath of our gatherings. We center LGBTQIA+, trans, non-binary, and BIPOC community members through inclusive, gender-affirming language, zero body-policing, optional camera/eye-contact preferences, and full agency over your practice. You are never forced into any posture, expression, or sharing circle—your autonomy and comfort are sacred.",
   },
@@ -64,7 +64,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "queer-affirming",
     question: "Can I book private sound baths, queer community circles, or retreat sessions?",
     answer:
-      "Yes! Jules offers customized 1-on-1 private somatic sound journeys, queer partnership celebrations, intentional community grief/joy circles, and corporate wellness consulting. Reach out through the booking form below to co-create a session tailored to your intentions.",
+      "Yes! Juls offers customized 1-on-1 private somatic sound journeys, queer partnership celebrations, intentional community grief/joy circles, and corporate wellness consulting. Reach out through the booking form below to co-create a session tailored to your intentions.",
   },
 ];
 
@@ -219,7 +219,7 @@ export default function FAQ() {
               href="#connect"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-wine text-white text-xs uppercase tracking-widest font-medium hover:bg-wine/90 transition-all shadow-xs"
             >
-              Ask Jules Directly →
+              Ask Juls Directly →
             </a>
           </div>
         </motion.div>

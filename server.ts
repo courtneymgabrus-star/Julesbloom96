@@ -8,8 +8,8 @@ import { Resend } from "resend";
 
 dotenv.config();
 
-const NOTIFY_TO_EMAIL = process.env.NOTIFY_TO_EMAIL || "hello@julesinbloom.com";
-const NOTIFY_FROM_EMAIL = process.env.NOTIFY_FROM_EMAIL || "Jules in Bloom Website <onboarding@resend.dev>";
+const NOTIFY_TO_EMAIL = process.env.NOTIFY_TO_EMAIL || "julesinbloom96@gmail.com";
+const NOTIFY_FROM_EMAIL = process.env.NOTIFY_FROM_EMAIL || "Juls in Bloom Website <onboarding@resend.dev>";
 
 let resendClient: Resend | null = null;
 function getResend(): Resend {
@@ -123,7 +123,7 @@ async function startServer() {
         contents: prompt,
         config: {
           systemInstruction:
-            "You are Jules in Bloom's botanical & somatic wellness research guide. Provide accurate, real-world grounded insights citing current scientific literature, astrological/lunar alignments, herbal properties, and nervous system regulation practices. Format with warm, calming clarity.",
+            "You are Juls in Bloom's botanical & somatic wellness research guide. Provide accurate, real-world grounded insights citing current scientific literature, astrological/lunar alignments, herbal properties, and nervous system regulation practices. Format with warm, calming clarity.",
           tools: [{ googleSearch: {} }],
         },
       });
@@ -208,7 +208,7 @@ async function startServer() {
         contents: `Create a detailed sacred botanical visualization, altar arrangement, sensory profile, and color palette based on this request: "${prompt}" with theme "${theme}".`,
         config: {
           systemInstruction:
-            "You are Jules in Bloom's botanical visual artist. Generate a deeply poetic, sensory-rich altar and floral layout blueprint. Include botanical species names, color harmonies (with hex codes), crystal pairings, sound bowl frequencies, and sacred geometrical layout recommendations.",
+            "You are Juls in Bloom's botanical visual artist. Generate a deeply poetic, sensory-rich altar and floral layout blueprint. Include botanical species names, color harmonies (with hex codes), crystal pairings, sound bowl frequencies, and sacred geometrical layout recommendations.",
         },
       });
 
@@ -231,7 +231,7 @@ async function startServer() {
         return res.status(400).json({ error: "Prompt is required" });
       }
 
-      const systemInstruction = `You are Jules in Bloom's Trauma-Informed Somatic & Neuro-Wellness Guide.
+      const systemInstruction = `You are Juls in Bloom's Trauma-Informed Somatic & Neuro-Wellness Guide.
 Engage in step-by-step, thorough clinical and compassionate reasoning to synthesize nervous system regulation protocols, polyvagal theory, somatic mindfulness, botanical energetics, sound frequency acoustics (e.g., 432Hz, 528Hz), and custom restorative sequences.
 Provide deep, nuanced, comprehensive, and compassionate step-by-step guidance.`;
 

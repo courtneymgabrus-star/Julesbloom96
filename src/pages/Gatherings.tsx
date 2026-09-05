@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Users, Sparkles, Heart, Calendar } from 'lucide-react';
+import { Users, Sparkles, Heart, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Events from '../components/Events';
@@ -69,6 +69,86 @@ export default function Gatherings() {
 
         {/* Public Gatherings Section */}
         <Events />
+
+        <BotanicalDivider />
+
+        {/* Weekly Studio Classes Section */}
+        <section className="py-16 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/50 border border-blush/30 rounded-3xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-blush/20 mb-8">
+                <div>
+                  <span className="text-[0.65rem] uppercase tracking-widest font-bold text-sage mb-2 block">Ongoing Public Classes</span>
+                  <h2 className="font-serif italic text-3xl md:text-4xl text-wine">Weekly Studio Teaching at Highland Yoga</h2>
+                  <p className="text-slate text-sm font-medium mt-2 max-w-xl">
+                    Join Juls for weekly heated flow, restorative somatic practices, and sound integration across two Atlanta studio locations.
+                  </p>
+                </div>
+                <a
+                  href="https://www.instagram.com/highlandyoga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#2d4f21] text-white px-7 py-3.5 rounded-full text-[0.68rem] uppercase tracking-[0.14em] font-semibold hover:bg-sage transition-all self-start md:self-auto shrink-0 shadow-sm"
+                >
+                  <span>@highlandyoga</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-cream/90 border border-blush/20 rounded-2xl p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-2 text-wine text-xs font-semibold mb-2">
+                      <MapPin className="w-4 h-4 text-wine shrink-0" />
+                      <span>Sandy Springs, GA</span>
+                    </div>
+                    <h3 className="font-serif italic text-2xl text-ink mb-2">Highland Yoga – Sandy Springs</h3>
+                    <p className="text-slate text-sm leading-relaxed mb-6 font-medium">
+                      Trauma-informed vinyasa flows, mindful transitions, and evening nervous system unwinding.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-blush/20 flex items-center justify-between">
+                    <span className="text-[0.65rem] uppercase tracking-wider font-semibold text-slate">Sandy Springs Studio</span>
+                    <a
+                      href="https://www.instagram.com/highlandyoga"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-wine text-[0.68rem] uppercase tracking-widest font-semibold flex items-center gap-1 hover:underline"
+                    >
+                      <span>Class Schedule</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="bg-cream/90 border border-blush/20 rounded-2xl p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-2 text-wine text-xs font-semibold mb-2">
+                      <MapPin className="w-4 h-4 text-wine shrink-0" />
+                      <span>Alpharetta, GA</span>
+                    </div>
+                    <h3 className="font-serif italic text-2xl text-ink mb-2">Highland Yoga – Alpharetta</h3>
+                    <p className="text-slate text-sm leading-relaxed mb-6 font-medium">
+                      Community-centered somatic yoga, breathwork exploration, and soothing restorative sound baths.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-blush/20 flex items-center justify-between">
+                    <span className="text-[0.65rem] uppercase tracking-wider font-semibold text-slate">Alpharetta Studio</span>
+                    <a
+                      href="https://www.instagram.com/highlandyoga"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-wine text-[0.68rem] uppercase tracking-widest font-semibold flex items-center gap-1 hover:underline"
+                    >
+                      <span>Class Schedule</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <BotanicalDivider />
 

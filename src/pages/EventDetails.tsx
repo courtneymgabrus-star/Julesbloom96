@@ -11,8 +11,8 @@ export default function EventDetails() {
   const event = EVENTS.find(e => e.id === eventId);
 
   usePageTitle(
-    event ? `${event.title} | Jules in Bloom` : 'Gathering Not Found',
-    event ? event.description : 'Details on upcoming somatic gatherings and sound ceremonies by Jules in Bloom.'
+    event ? `${event.title} | Juls in Bloom` : 'Gathering Not Found',
+    event ? event.description : 'Details on upcoming somatic gatherings and sound ceremonies by Juls in Bloom.'
   );
 
   if (!event) {
@@ -52,6 +52,7 @@ export default function EventDetails() {
           <img 
             src={event.image} 
             alt={event.title} 
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-ink/40" />

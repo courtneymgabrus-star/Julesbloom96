@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Intro from './components/Intro';
 import About from './components/About';
 import Offerings from './components/Offerings';
-import StudioBanner from './components/StudioBanner';
 import Yoga from './components/Yoga';
 import SoundHealing from './components/SoundHealing';
 import Events from './components/Events';
@@ -17,10 +16,10 @@ import BotanicalDivider from './components/BotanicalDivider';
 
 export default function LandingPage() {
   useEffect(() => {
-    document.title = 'Jules in Bloom | Yoga & Sound Healing in Atlanta, GA';
+    document.title = 'Juls in Bloom | Yoga & Sound Healing in Atlanta, GA';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', 'Queer-affirming wellness sanctuary in Atlanta, GA. Yoga, sound healing, and research-led spirit work by Jules.');
+      metaDesc.setAttribute('content', 'Queer-affirming wellness sanctuary in Atlanta, GA. Yoga, sound healing, and research-led spirit work by Juls.');
     }
   }, []);
 
@@ -33,7 +32,6 @@ export default function LandingPage() {
         <About />
         <BotanicalDivider />
         <Offerings />
-        <StudioBanner />
         <BotanicalDivider />
         <Yoga />
         <SoundHealing />

@@ -21,7 +21,6 @@ export default function Navbar() {
   const navLinks = [
     { name: 'About', href: '#about', isPage: false },
     { name: 'Offerings', href: '#offerings', isPage: false },
-    { name: 'Studio Suite', href: '/studio', isPage: true },
     { name: 'Gatherings', href: '/gatherings', isPage: true },
     { name: 'Research', href: '/research', isPage: true },
     { name: 'FAQ', href: '#faq', isPage: false },
@@ -42,14 +41,18 @@ export default function Navbar() {
       >
         <Link to="/" className="group flex items-center gap-2.5">
           <img
-            src={brandLogo}
-            alt="Jules in Bloom"
+            src={brandLogo || "/logo.png"}
+            alt="Juls in Bloom"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.src = "https://i.postimg.cc/3xwr4sfh/Divine-Jules.png";
+            }}
             className="h-9 w-auto object-contain transition-transform group-hover:scale-105"
             width="36"
             height="36"
           />
           <span className="font-serif italic text-2xl md:text-3xl tracking-tight text-wine font-medium group-hover:opacity-80 transition-opacity whitespace-nowrap">
-            Jules in Bloom
+            Juls in Bloom
           </span>
         </Link>
 

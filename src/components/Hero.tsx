@@ -41,12 +41,17 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-        className="mb-6"
+        className="mb-6 flex justify-center items-center"
       >
         <img 
-          src={heroLogo} 
-          alt="Jules in Bloom Logo" 
-          className="w-56 md:w-80 mx-auto"
+          src={heroLogo || "/logo.png"} 
+          alt="Juls in Bloom Logo" 
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            // Safe fallback if local binary is unavailable
+            e.currentTarget.src = "https://i.postimg.cc/3xwr4sfh/Divine-Jules.png";
+          }}
+          className="w-56 md:w-80 max-w-full h-auto mx-auto object-contain drop-shadow-sm"
           width="320"
           height="140"
           // @ts-ignore
@@ -79,7 +84,7 @@ export default function Hero() {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="text-slate max-w-md mx-auto mb-10 tracking-wide text-[0.95rem] font-medium"
       >
-        a queer-affirming sanctuary where public health expertise meets somatic and sacred practice.
+        a queer-affirming sanctuary where research science and advocacy meet somatic and sacred practice.
       </motion.p>
 
       <motion.div

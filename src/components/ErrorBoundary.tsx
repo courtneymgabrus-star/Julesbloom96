@@ -21,7 +21,7 @@ export default class ErrorBoundary extends Component<Props, State> {
   }
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Uncaught error in Jules in Bloom component tree:', error, errorInfo);
+    console.error('Uncaught error in Juls in Bloom component tree:', error, errorInfo);
   }
 
   private handleReset = () => {

@@ -15,7 +15,7 @@ import {
   parseISO,
   getDay
 } from 'date-fns';
-import { ChevronLeft, ChevronRight, Clock, User, Mail, MessageSquare, Send, AlertCircle, CheckCircle2, RefreshCw } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock, User, Mail, MessageSquare, Send, AlertCircle, CheckCircle2, RefreshCw, Calendar, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { EVENTS } from '../constants';
 
@@ -166,8 +166,31 @@ export default function BookingCalendar() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-[3rem] shadow-2xl shadow-wine/5 overflow-hidden border border-blush/20">
-      <div className="grid md:grid-cols-2">
+    <div className="max-w-4xl mx-auto space-y-4">
+      {/* Calendly Direct Booking Banner */}
+      <div className="bg-gradient-to-r from-wine/10 via-blush/20 to-sage/15 border border-wine/20 rounded-2xl p-4 md:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="flex items-center gap-3.5">
+          <div className="w-10 h-10 rounded-full bg-wine text-white flex items-center justify-center shrink-0 shadow-sm">
+            <Calendar className="w-5 h-5" />
+          </div>
+          <div>
+            <h4 className="font-serif italic text-lg text-wine font-semibold">Instant 1:1 Booking via Calendly</h4>
+            <p className="text-slate text-xs font-medium">Prefer to pick your slot directly on Juls's live calendar?</p>
+          </div>
+        </div>
+        <a
+          href="https://calendly.com/julesinbloom96"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-wine text-white px-6 py-2.5 rounded-full text-[0.68rem] uppercase tracking-widest font-semibold hover:bg-wine/90 transition-all shrink-0 shadow-sm"
+        >
+          <span>Open Calendly</span>
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
+      </div>
+
+      <div className="bg-white rounded-[3rem] shadow-2xl shadow-wine/5 overflow-hidden border border-blush/20">
+        <div className="grid md:grid-cols-2">
         {/* Left Side: Calendar */}
         <div className="p-8 border-r border-blush/20">
           <div className="flex items-center justify-between mb-8">
@@ -242,7 +265,7 @@ export default function BookingCalendar() {
               </div>
             </div>
             <p className="text-xs text-slate leading-relaxed italic">
-              Each session is crafted with trauma-informed, queer-affirming care. Jules will reach out to confirm your intention and logistics within 24 hours.
+              Each session is crafted with trauma-informed, queer-affirming care. Juls will reach out to confirm your intention and logistics within 24 hours.
             </p>
           </div>
         </div>
@@ -468,7 +491,7 @@ export default function BookingCalendar() {
                   </div>
                 )}
                 <p className="text-slate text-[0.7rem] italic">
-                  Jules will review and send confirmation to {formData.email} within 24 hours.
+                  Juls will review and send confirmation to {formData.email} within 24 hours.
                 </p>
                 <button
                   onClick={() => {
@@ -509,6 +532,7 @@ export default function BookingCalendar() {
           </AnimatePresence>
         </div>
       </div>
+    </div>
     </div>
   );
 }

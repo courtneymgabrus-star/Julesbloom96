@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Sparkles, Music, ShieldCheck, Heart } from 'lucide-react';
+import { Sparkles, ShieldCheck, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function SoundHealing() {
@@ -23,6 +23,10 @@ export default function SoundHealing() {
              <img 
               src="https://i.postimg.cc/dVGPqJjq/juls-bowls.jpg" 
               alt="Crystal Singing Bowls" 
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&q=80&w=800";
+              }}
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover rounded-full shadow-inner relative z-10"
@@ -43,43 +47,27 @@ export default function SoundHealing() {
             </p>
 
             <div className="grid gap-6 mb-8">
-              {benefits.map((benefit, i) => (
-                <div key={i} className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-wine shrink-0 shadow-sm">
-                    {benefit.icon}
+              {benefits.map((b, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="text-wine mt-1 bg-blush/30 p-2 rounded-xl">
+                    {b.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-ink text-sm mb-1">{benefit.title}</h4>
-                    <p className="text-slate text-xs leading-relaxed">{benefit.desc}</p>
+                    <h3 className="font-serif italic text-xl text-ink mb-1">{b.title}</h3>
+                    <p className="text-slate text-xs leading-relaxed">{b.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <Link
-              to="/gatherings#book-private"
+            <Link 
+              to="/gatherings#book-private" 
               className="inline-block bg-sage text-white px-8 py-3.5 rounded-full text-[0.7rem] uppercase tracking-[0.12em] font-semibold hover:bg-sage/90 transition-all shadow-sm"
             >
-              Reserve Sound Bath Experience
+              Book a Sound Bath Experience
             </Link>
           </motion.div>
         </div>
-
-        {/* Testimonial */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center py-16 px-8 bg-white/40 rounded-[3rem] border border-blush/20 shadow-sm"
-        >
-          <Music className="w-8 h-8 text-wine mx-auto mb-6 opacity-40" />
-          <p className="font-serif italic text-2xl md:text-3xl text-wine leading-relaxed mb-8">
-            "Jules' sound baths are unlike anything I've experienced. I felt a profound sense of return to my own body—a quiet safety I haven't found elsewhere."
-          </p>
-          <div className="text-[0.65rem] uppercase tracking-widest font-bold text-sage">
-            — Sarah M., Private Client
-          </div>
-        </motion.div>
       </div>
     </section>
   );

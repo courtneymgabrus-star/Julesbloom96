@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import aboutImage from '../assets/images/regenerated_image_1787261392626.jpg';
 
 export default function About() {
   return (
@@ -13,8 +14,12 @@ export default function About() {
             className="aspect-[3/4] rounded-3xl bg-blush overflow-hidden shadow-2xl relative"
           >
              <img
-              src="https://i.postimg.cc/wBkK19yX/About.jpg"
-              alt="Jules"
+              src={aboutImage}
+              alt="Juls"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "https://i.postimg.cc/wBkK19yX/About.jpg";
+              }}
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover"
@@ -28,9 +33,10 @@ export default function About() {
             className="flex flex-col gap-3"
           >
             {[
-              "Doctor of Public Health (DrPH)",
+              "Advocate & Research Scientist",
+              "Instructor at Highland Yoga (Sandy Springs & Alpharetta)",
               "Registered Yoga Teacher (RYT-200)",
-              "Advanced Sound Certification"
+              "Sound Healing Practicitoner"
             ].map((cred, i) => (
               <div key={i} className="flex items-center gap-3 text-[0.82rem] text-slate font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-br from-rose via-blush to-sage" />
@@ -47,7 +53,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-[0.62rem] tracking-[0.22em] uppercase font-semibold text-sage mb-3"
           >
-            About Jules
+            About Juls
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -56,40 +62,44 @@ export default function About() {
             transition={{ delay: 0.1 }}
             className="font-serif italic text-4xl md:text-5xl text-wine leading-tight mb-8"
           >
-            the science of healing<br />meets the wisdom of the body.
+            where trauma-informed care meets intentional practice.
           </motion.h2>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="space-y-6 text-slate text-[0.95rem] leading-[1.85]"
+            className="space-y-6 text-slate leading-[1.8] text-[0.95rem] font-medium"
           >
             <p>
-              As a queer woman with a doctorate in public health, Jules weaves together evidence-based practice with ancient somatic wisdom. Her approach is rooted in the belief that wellness is a social justice issue and healing is a radical act of reclamation.
+            My work brings together yoga, sound, advocacy, and evidence-based research to create intentional spaces for healing, connection, and a deeper sense of safety within the body.
             </p>
             <p>
-              Based in Atlanta, she creates queer-affirming spaces where research meets ritual. Whether through a grounding vinyasa flow or a deep sonic meditation, her work is designed to help you return to the home of your own body.
+              I approach healing through a commitment to equity, collective care, and the freedom to exist fully and authentically. Care should be accessible, affirming, and rooted in the understanding that healing happens both within ourselves and in relationship with one another.
             </p>
+            <p>
+              Whether guiding an intimate sound bath, leading a vinyasa or yin flow, and holding space for nervous system restoration, my intention is simple: to create containers where your whole self can soften and bloom.
+            </p>
+          </motion.div>
 
-            <blockquote className="font-serif italic text-2xl text-wine py-8 border-y border-blush/40 tracking-wide my-8">
-              "Healing isn't about fixing what's broken, but remembering what was always whole."
-            </blockquote>
-
-            <div className="flex flex-wrap gap-4 pt-2">
-              <Link 
-                to="/gatherings#book-private" 
-                className="inline-block bg-sage text-white px-9 py-3.5 rounded-full text-[0.7rem] uppercase tracking-[0.12em] font-semibold hover:bg-sage/90 transition-all shadow-sm"
-              >
-                Book a Session
-              </Link>
-              <a 
-                href="#connect" 
-                className="inline-block text-wine border border-wine px-9 py-3.5 rounded-full text-[0.7rem] uppercase tracking-[0.12em] font-semibold hover:bg-wine hover:text-white transition-all"
-              >
-                Send a Note
-              </a>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mt-10 pt-10 border-t border-blush/20 flex flex-wrap gap-8 items-center"
+          >
+            <div>
+              <span className="font-serif italic text-2xl text-wine block">Juls</span>
+              <span className="text-[0.65rem] uppercase tracking-widest text-slate font-medium">Founder & Facilitator</span>
             </div>
+            <Link
+              to="/research"
+              className="text-[0.7rem] uppercase tracking-widest text-wine font-semibold border-b border-wine/40 pb-0.5 hover:border-wine transition-all"
+            >
+              Read Research & Publications →
+            </Link>
           </motion.div>
         </div>
       </div>

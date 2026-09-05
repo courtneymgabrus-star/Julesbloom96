@@ -53,7 +53,7 @@ All bodies, identities, and experience levels are warmly welcomed in this trauma
     price: '$25.00',
     link: '/gatherings#book-private',
     description: 'Evidence-based polyvagal movement, gentle restorative vinyasa, and vagal toning tools for burnout recovery.',
-    longDescription: `Rooted in Dr. Jules' doctoral public health research and polyvagal theory, this interactive masterclass provides actionable, trauma-informed somatic practices to recalibrate your nervous system.
+    longDescription: `Rooted in Juls' neuroscience and somatic research and polyvagal theory, this interactive masterclass provides actionable, trauma-informed somatic practices to recalibrate your nervous system.
 
 We will explore gentle spinal mobility, diaphragm release, physiological sighs, and restorative yoga postures designed to signal safety to your ventral vagal complex.
 

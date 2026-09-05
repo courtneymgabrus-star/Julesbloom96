@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, Instagram, Send, CheckCircle2, AlertCircle, RefreshCw } from 'lucide-react';
+import { Mail, Instagram, Calendar, ExternalLink, Send, CheckCircle2, AlertCircle, RefreshCw } from 'lucide-react';
 
 export default function Connect() {
   const [formData, setFormData] = useState({
@@ -89,7 +89,7 @@ export default function Connect() {
                 </div>
                 <h3 className="font-serif italic text-3xl text-wine">Message Sent with Reverence</h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Thank you, <strong className="text-ink">{formData.name}</strong>. Your note has been safely received. Jules will review your inquiry and reach back out to <span className="text-wine font-medium">{formData.email}</span> within 24–48 hours.
+                  Thank you, <strong className="text-ink">{formData.name}</strong>. Your note has been safely received. Juls will review your inquiry and reach back out to <span className="text-wine font-medium">{formData.email}</span> within 24–48 hours.
                 </p>
                 <button
                   type="button"
@@ -196,15 +196,33 @@ export default function Connect() {
             transition={{ delay: 0.3 }}
             className="space-y-12"
           >
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex gap-5 items-start">
                 <div className="w-12 h-12 bg-[#d4e5cc] rounded-full flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5 text-wine" />
                 </div>
                 <div>
                   <h4 className="text-[0.65rem] uppercase tracking-[0.15em] font-semibold text-ink mb-1">Email</h4>
-                  <a href="mailto:hello@julesinbloom.com" className="text-slate text-sm hover:text-wine transition-colors">
-                    hello@julesinbloom.com
+                  <a href="mailto:julesinbloom96@gmail.com" className="text-slate text-sm hover:text-wine transition-colors font-medium">
+                    julesinbloom96@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-5 items-start">
+                <div className="w-12 h-12 bg-[#d4e5cc] rounded-full flex items-center justify-center shrink-0">
+                  <Calendar className="w-5 h-5 text-wine" />
+                </div>
+                <div>
+                  <h4 className="text-[0.65rem] uppercase tracking-[0.15em] font-semibold text-ink mb-1">Direct Scheduling</h4>
+                  <a
+                    href="https://calendly.com/julesinbloom96"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-wine text-sm font-semibold flex items-center gap-1.5 hover:underline"
+                  >
+                    <span>calendly.com/julesinbloom96</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
@@ -219,7 +237,7 @@ export default function Connect() {
                     href="https://instagram.com/julesinbloom"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-slate text-sm hover:text-wine transition-colors"
+                    className="text-slate text-sm hover:text-wine transition-colors font-medium"
                   >
                     @julesinbloom
                   </a>
@@ -227,9 +245,12 @@ export default function Connect() {
               </div>
             </div>
 
-            <div className="pt-10 border-t border-blush/20">
+            <div className="pt-10 border-t border-blush/20 space-y-2">
+              <p className="text-slate text-xs">
+                <span className="font-semibold text-ink">Studio Teaching:</span> Highland Yoga (Sandy Springs & Alpharetta locations)
+              </p>
               <p className="text-slate text-xs italic">
-                serving the greater atlanta area and online community.
+                Serving the greater Atlanta area, North Georgia, and online community.
               </p>
             </div>
           </motion.div>

@@ -28,9 +28,9 @@ const OfferingsList = [
     isExternalPage: true,
   },
   {
-    title: 'Public Health & Research',
+    title: 'Advocacy & Research Science',
     label: 'Research',
-    description: 'Speaking engagements, neuro-somatic inquiries, and community health research with equity at the center.',
+    description: 'Speaking engagements, neuro-somatic inquiries, and community advocacy research with equity at the center.',
     icon: <Microscope className="w-5 h-5 text-wine" />,
     href: '/research',
     isExternalPage: true,

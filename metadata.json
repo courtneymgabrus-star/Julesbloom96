@@ -1,6 +1,6 @@
 {
-  "name": "Jules in Bloom",
-  "description": "Queer-affirming wellness sanctuary in Atlanta, GA. Yoga, sound healing, and research-led spirit work by Jules.",
+  "name": "Juls in Bloom",
+  "description": "Queer-affirming wellness sanctuary in Atlanta, GA. Yoga, sound healing, and research-led spirit work by Juls.",
   "requestFramePermissions": ["geolocation"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -27,7 +27,7 @@ const researchTopics = [
 ];
 
 export default function Research() {
-  usePageTitle('Research & Evidence-Based Somatics', 'Explore Dr. Jules’ clinical publications, polyvagal frameworks, and neuro-somatic research bridging modern science with sacred sound healing.');
+  usePageTitle('Research & Evidence-Based Somatics', 'Explore Juls’ research publications, polyvagal frameworks, and neuro-somatic inquiries bridging modern science with sacred sound healing.');
 
   return (
     <div className="bg-cream min-h-screen">
@@ -87,22 +87,22 @@ export default function Research() {
               ))}
             </div>
 
-            {/* DrPH Framework Highlight */}
+            {/* Research Framework Highlight */}
             <div className="bg-wine text-white rounded-[3rem] p-8 md:p-16 relative overflow-hidden mb-20 shadow-xl shadow-wine/10">
               <div className="max-w-2xl relative z-10">
                 <span className="text-[0.65rem] uppercase tracking-widest text-blush font-bold mb-4 block">
-                  Doctor of Public Health (DrPH) Candidate Focus
+                  Advocate & Research Scientist Focus
                 </span>
                 <h2 className="font-serif italic text-3xl md:text-5xl mb-6">
                   Community-Centered Somatic Resilience
                 </h2>
                 <p className="text-white/80 text-sm md:text-base leading-relaxed mb-8">
-                  My doctoral research centers on how somatic interventions and collective acoustic spaces dismantle systemic burnout patterns within queer, BIPOC, and caregiving communities. We transform theoretical health equity into tangible somatic safety.
+                  My research centers on how somatic interventions and collective acoustic spaces dismantle systemic burnout patterns within queer, BIPOC, and caregiving communities. We transform theoretical health equity into tangible somatic safety.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 text-xs bg-white/10 px-4 py-2 rounded-full border border-white/20">
                     <Award className="w-4 h-4 text-blush" />
-                    <span>Emory University DrPH Fellow</span>
+                    <span>Research Scientist & Advocate</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs bg-white/10 px-4 py-2 rounded-full border border-white/20">
                     <FileText className="w-4 h-4 text-blush" />

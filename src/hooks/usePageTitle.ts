@@ -10,7 +10,7 @@ export function usePageTitle(pageTitle: string, metaDescription?: string) {
     if (pageTitle.includes('|')) {
       document.title = pageTitle;
     } else {
-      document.title = `${pageTitle} | Jules in Bloom`;
+      document.title = `${pageTitle} | Juls in Bloom`;
     }
 
     // Set meta description

@@ -76,6 +76,7 @@ export default function PastEventsCarousel() {
             <img 
               src={event.image} 
               alt={event.title}
+              referrerPolicy="no-referrer"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

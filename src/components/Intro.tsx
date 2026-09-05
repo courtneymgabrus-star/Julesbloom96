@@ -15,7 +15,7 @@ export default function Intro() {
             a place to land,<br />breathe, and return<br />to yourself.
           </h2>
           <p className="text-slate max-w-sm text-[0.95rem] leading-[1.85]">
-            Jules is a Doctor of Public Health, registered yoga teacher, and sound healer devoted to building bridges between evidence-based wellness and embodied, community-rooted healing.
+            Juls is a yoga instructor, sound healer, advocate, and research scientist devoted to building bridges between evidence-based wellness and embodied, community-rooted healing.
           </p>
         </motion.div>
 

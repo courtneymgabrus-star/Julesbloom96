@@ -7,7 +7,6 @@ const LandingPage = lazy(() => import('./LandingPage'));
 const EventDetails = lazy(() => import('./pages/EventDetails'));
 const Gatherings = lazy(() => import('./pages/Gatherings'));
 const Research = lazy(() => import('./pages/Research'));
-const SanctuaryStudio = lazy(() => import('./pages/SanctuaryStudio'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function PageLoader() {
@@ -30,7 +29,6 @@ export default function App() {
               <Route path="/events/:eventId" element={<EventDetails />} />
               <Route path="/gatherings" element={<Gatherings />} />
               <Route path="/research" element={<Research />} />
-              <Route path="/studio" element={<SanctuaryStudio />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
